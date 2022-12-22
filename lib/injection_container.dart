@@ -33,8 +33,7 @@ Future<void> init() async {
   sl.registerFactory(() => PostsBloc(getAllPosts: sl()));
   sl.registerFactory(() => AddDeleteUpdatePostBloc(addPost: sl(), updatePost: sl(), deletePost: sl()));
 
-// Usecases
-
+// Usecase
   sl.registerLazySingleton(() => GetAllPostsUsecase(sl()));
   sl.registerLazySingleton(() => AddPostUsecase(sl()));
   sl.registerLazySingleton(() => DeletePostUsecase(sl()));
