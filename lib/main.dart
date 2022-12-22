@@ -7,12 +7,10 @@ import 'package:posts_clean_bloc_app/features/posts/presentation/bloc/posts/post
 import 'package:posts_clean_bloc_app/features/posts/presentation/pages/posts_page.dart';
 import 'injection_container.dart' as di;
 
-GetIt locator = GetIt.instance;
-
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  locator.registerLazySingleton<PostsBloc>(() => PostsBloc(getAllPosts: locator())) ;
   await di.init();
+
   runApp(MyApp());
 }
 
