@@ -23,11 +23,10 @@ import 'package:http/http.dart' as http;
 // // )
 // void configureDependencies() => locator.init();
 
-// final GetIt sl = GetIt.instance;
+final GetIt sl = GetIt.instance;
 
 Future<void> init() async {
 //! Features - posts
-  final GetIt sl = GetIt.instance;
 
 // Bloc
 
